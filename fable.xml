@@ -1,5 +1,53 @@
 <fable>
-	<page>
+	<page background="backgoe.jpg">
+      <agent text="Clique na caverna, para adentrá-la" x="20" y="400" font-size="18" width="250" color="white"/>
+    <agent img="Tile (1).png" x="0" y="0" width="100" height="100" /> 
+    <agent img="Tile (2).png" x="100" y="0" width="100" height="100" /> 
+    <agent img="Tile (2).png" x="200" y="0" width="100" height="100" /> 
+    <agent img="Tile (2).png" x="300" y="0" width="100" height="100" /> 
+    <agent img="Tile (2).png" x="400" y="0" width="100" height="100" /> 
+    <agent img="white.png" x="45" y="100" width="45" height="50"/>
+    <agent img="pink.png" x="15" y="100" width="45" height="50"/>
+    <agent img="cave_entrance.png" x="350" y="80" width="230" height="230" on-touch="_NEXT_PAGE"/>
+  </page>
+  <page background="OIP (1).jpg">
+    <agent text="Ao entrar na caverna, eles se deparam com um terrível monstro. Naquele momento, eles só queriam voltar para casa" x="20" y="400" font-size="18" color="white" on-touch="story2">
+      <story2 text="Eles usaram todo o seu poder mágico para invocar um enorme machado. Agora, a única saída deles é atacar o monstro com o machado" on-touch="story3"/>
+      <story3 text="Vejo que farei mais duas vítimas hoje. Eu estava mesmo com fome (Kraken)" on-touch="story4" y="350" font-size="15" color="blue"/>
+      <story4 text="Acho que precisamos derrotá-lo com nosso machado(White)" y="350" font-size="15" color="green" on-touch="story5"/>
+      <story5 text="Segundo as lendas contadas em Woodland, a única forma de sair da caverna é por um portal.Talvez possamos invocá-lo ao matar esse monstro (Pink)" y="350" font-size="15" color="red" on-touch="story6"/>
+      <story6 text="Jogue o machado no Kraken.Em seguida, clique no portal, para voltar para casa" x="20" y="400" font-size="18" color="white"/>
+      </agent>
+    <agent img="Tile (1).png" x="0" y="0" width="100" height="100" /> 
+    <agent img="Tile (2).png" x="100" y="0" width="100" height="100" /> 
+    <agent img="Tile (2).png" x="200" y="0" width="100" height="100" /> 
+    <agent img="Tile (2).png" x="300" y="0" width="100" height="100" /> 
+    <agent img="Tile (2).png" x="400" y="0" width="100" height="100" /> 
+  	 <agent img="white.png" x="45" y="100" width="45" height="50"/>
+      <agent img="pink.png" x="15" y="100" width="45" height="50"/>
+    	 <agent img="MONSTER.JPG" x="300" y="100" width="200" 
+      height="180" drop-zone="dead"> 
+         <dead img="semmmmmm.jpg" x="300" y="120" width="250" height="200" on-touch="_GOTO_PAGE:1"/>
+         </agent>
+    <agent img="R.png" x="35" y="150" 
+      width="100" height="100" draggable="true" on-drop="dead" on-zone="out" on-trigger="out">
+    	 <out  img="OIP (1).jpg" x="0" y="0" width="0" height="0"/>
+      
+    
+ 
+      
+    	
+    	
+    				
+       
+    	
+    
+    
+
+      
+    
+  	
+  
   
     
   </page>
